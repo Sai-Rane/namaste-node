@@ -1,0 +1,15 @@
+season 1 episode 4
+You can make 2 modules work together using the require function.
+You can export multiple things by wrapping it inside objects
+ 
+There are 2 types of module pattern : CJS and MJS
+Common JS Modules known as CJS
+  In CJS we use module.exports and require. CJS is by default used by Node.
+  CJS is a older way. In CJS when we rquire modules it requires all the modules in a synchronous way(line after line).
+  In CJS the code is executed in non strict mode
+ 
+ 
+ES Modules also known as MJS
+  It has different way of importing and exporting modules. Here we use import and export. By default used in React.
+  MJS is a newer way.
+  In MJS code is executed in strict mode. In strict mode we cannot write variables without using var let const
