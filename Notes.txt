@@ -60,3 +60,16 @@ How do we use our Cluster
 	You need to get a connection string, to connect to the database
 
 MongoDB Compass will help you to get access of the Database. It is the UI for the Database
+
+The structure is like Database --> Collection --> Document
+    Collection name means Table name
+    Just like in Reational DB, we create Tables, we create Document in MongoDB
+
+    39min : How to connect MongoDB with Node application, for that you need a package called mongodb, install it from npm
+    Later we will use mongoose package from npm library to connect MongoDB with Node application
+    Dont push node_modules to github, create a .gitignore file and mention node_modules to ignore it from pushing
+
+    await keyword because it is returning a promise
+
+    Documentation MongoDB - https://mongodb.github.io/node-mongodb-native/6.16/
+    Collection Object link - https://mongodb.github.io/node-mongodb-native/6.16/classes/Collection.html
