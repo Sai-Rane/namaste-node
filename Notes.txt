@@ -13,3 +13,50 @@ ES Modules also known as MJS
   It has different way of importing and exporting modules. Here we use import and export. By default used in React.
   MJS is a newer way.
   In MJS code is executed in strict mode. In strict mode we cannot write variables without using var let const
+
+-------------------------------------------------------------------------
+
+Episode 12
+Database
+It is a organized collection of data. With the help of DBMS we can talk with the Database(like selecting data, fetching data)
+
+Types of Database
+  Relational Database - MySql, Postgres
+  No Sql - MongoDB
+  In memory DB - Redis
+  Cloud DB - Amazon RDS
+
+RAM and ROM - RAM is a faster memory but cannot store more amount of data
+
+Types of NoSQL DB are Document DB, Key value DB, Graph DB, Wide column DB, Multimodel DB
+MongoDB is s Document DB - It stores data in json format. No need of Joins and Data normalization
+
+Data in MongoDB may look like this
+  {
+    "name":"John",
+    "age":"25",
+    "city":"New York",
+    "hobbies":["Reading","Swimming","Coding"]
+  },
+  {
+    "name":"John",
+    "age":"25",
+    "city":"New York",
+    "hobbies":["Reading","Swimming","Coding"]
+  }
+
+Relational DB store data in Table format
+
+Episode 13
+
+Self managed and One is the Compnay manages the Database for us.
+We dont need to worry about deploying our Database to the server when we go for production.
+We dont need to ensure that it is always up and running etc
+
+I am having a Database , now i am asking MongoDB company to manage the Database for me, so the company will take the cluster and deploy it on some machine
+Always go with the M0 plan(It is free)
+
+How do we use our Cluster
+	You need to get a connection string, to connect to the database
+
+MongoDB Compass will help you to get access of the Database. It is the UI for the Database
