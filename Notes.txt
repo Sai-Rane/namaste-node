@@ -45,6 +45,23 @@ Episode 6
 
   NodeJS is asynchronous, it performs async tasks using libuv
 
+Episode 8
+
+What happens when our code is executed by V8 engine?
+1. Parsing
+Lexical Analysis - Code is broken into small tokens
+2. Syntax Analysis - tokens are converted into AST (abstract syntax tree)
+  https://astexplorer.net/
+3. Compilation - AST is converted into machine code
+4. Execution - machine code is executed
+
+19 min - There are 2 types of languages. Interpreted and Compiled
+
+Interpreted languages - Code is executed line by line, Fast initial excution
+Compiled languages - Code is converted into machine code and then executed,Initially heavy but later fast
+
+Javascript V8 engine has a Interpreter and a Compiler. Compilation method in JS is known as JIT compilation
+
 -------------------------------------------------------------------------
 
 Episode 12
@@ -60,7 +77,7 @@ Types of Database
 RAM and ROM - RAM is a faster memory but cannot store more amount of data
 
 Types of NoSQL DB are Document DB, Key value DB, Graph DB, Wide column DB, Multimodel DB
-MongoDB is s Document DB - It stores data in json format. No need of Joins and Data normalization
+MongoDB is Document DB - It stores data in json format. No need of Joins and Data normalization
 
 Data in MongoDB may look like this
   {
