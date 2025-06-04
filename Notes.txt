@@ -24,7 +24,7 @@ Episode 6
   Event driven Architecture and asynchronous IO. Javascript is a synchronous and single threaded language
   
   Synchronous vs Asynchronous
-  In synchronous we need to wait for one task to complete before moving to the next task
+  In synchronous we need to wait for one task to complete before moving to the next task. Synchronous tasks blocks the main thread
   In asynchronous we can move to the next task without waiting for the previous task to complete
 
   Things which take some time to execute are called as asynchronous(example api call, reading a file) and things which take less time to execute are called as synchronous(example multiplication,addition operation)
@@ -41,7 +41,7 @@ Episode 6
   libuv has many super powers - Async IO is made simple using libuv
   libuv helps V8 engine in executing tasks
 
-  When executing a code, if there are any async tasks such as setTimeouts,api calls etc these are all given to libuv by V8 engine and libuv will execute them
+  When executing a code, if there are any async tasks such as setTimeouts,api calls etc these are all given to libuv by V8 engine(JS engine) and libuv will execute them
 
   NodeJS is asynchronous, it performs async tasks using libuv
 
