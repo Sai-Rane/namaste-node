@@ -7,12 +7,43 @@ Common JS Modules known as CJS
   In CJS we use module.exports and require. CJS is by default used by Node.
   CJS is a older way. In CJS when we rquire modules it requires all the modules in a synchronous way(line after line).
   In CJS the code is executed in non strict mode
- 
- 
+  In CJS code is executed in synchronous way
+
+
 ES Modules also known as MJS
   It has different way of importing and exporting modules. Here we use import and export. By default used in React.
   MJS is a newer way.
-  In MJS code is executed in strict mode. In strict mode we cannot write variables without using var let const
+  In MJS code is executed in strict mode. In strict mode we cannot write variables without using var let const
+
+Episode 5
+
+  41 min -
+  Go to NodeJS repository, then go to lib folder, all the utility methods like require,timers etc are there inside lib folder
+
+Episode 6
+  Event driven Architecture and asynchronous IO. Javascript is a synchronous and single threaded language
+  
+  Synchronous vs Asynchronous
+  In synchronous we need to wait for one task to complete before moving to the next task
+  In asynchronous we can move to the next task without waiting for the previous task to complete
+
+  Things which take some time to execute are called as asynchronous(example api call, reading a file) and things which take less time to execute are called as synchronous(example multiplication,addition operation)
+
+  28min - How synchronous code is executed
+  What is JS engine, what are the components inside JS engine
+  JS engine has one call stack. Every code you write is executed in this single call stack
+  JS engine also has a memory heap. It stores all the variables and functions
+  JS engine also has a garbage collector - It collects the unsused variables , functions
+
+  Whenever you run Javascript code, a global execution context is created
+
+  45 min- Connecting V8 engine to OS is done using libuv
+  libuv has many super powers - Async IO is made simple using libuv
+  libuv helps V8 engine in executing tasks
+
+  When executing a code, if there are any async tasks such as setTimeouts,api calls etc these are all given to libuv by V8 engine and libuv will execute them
+
+  NodeJS is asynchronous, it performs async tasks using libuv
 
 -------------------------------------------------------------------------
 
