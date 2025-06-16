@@ -83,6 +83,14 @@ Episode 9
 
     Event loop waits at the poll phase until it gets some api calls,file reading etc to execute
 
+Episode 10
+  What is the thread pool?
+  Thread is like a container where we can execute our code
+  There are some function for which libuv uses a thread pool to execute them
+  In node js thread pool there are 4 threads
+
+
+
 
 -------------------------------------------------------------------------
 
