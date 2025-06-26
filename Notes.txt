@@ -89,8 +89,16 @@ Episode 10
   There are some function for which libuv uses a thread pool to execute them
   In node js thread pool there are 4 threads
 
+Episode 11
 
+In our computer we have Limited RAM,Limited Storage,We can increase the memory of the system if we are using AWS servers
+We are creating a HTTP server using Node
+HTTP,SMTP,FTP etc are protocols, in which format data will be sent to the client
 
+We will create an http server which will listen to the http requests
+We can keep our frontend on one server,backend on one server and DB on one server
+
+We use Express to make http server
 
 -------------------------------------------------------------------------
 
