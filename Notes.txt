@@ -135,7 +135,7 @@ Relational DB store data in Table format
 
 Episode 13
 
-Self managed and One is the Compnay manages the Database for us.
+Self managed and One is the Company manages the Database for us.
 We dont need to worry about deploying our Database to the server when we go for production.
 We dont need to ensure that it is always up and running etc
 
@@ -159,3 +159,52 @@ The structure is like Database --> Collection --> Document
 
     Documentation MongoDB - https://mongodb.github.io/node-mongodb-native/6.16/
     Collection Object link - https://mongodb.github.io/node-mongodb-native/6.16/classes/Collection.html
+
+-------------------------------------------------------------------
+
+Season 2
+
+Episode 1
+Requirements ---->Design(thinking about techstack,etc) ---->Development ---->Testing ---->Deployment ---->Maintenance
+
+Monolith vs Microservice Architecture
+Monolith - Means you have a one big single project(It has backend , frontend,DB everything inside one single repository)
+Microservice - It is a architecture where we break down our application into smaller pieces
+
+What is a Service - Service/Project/Application. It is a small piece of code which has a specific functionality
+
+Episode 2
+Database and API Design
+Collections - User Collection,Connection Request Collection
+
+HTTP methods - GET,POST,PUT,PATCH,DELETE
+
+Sign Up API - POST
+Login API - POST
+
+Episode 3
+
+const express = require("express");
+
+const app = express(); //instance of express js application
+
+//the below function is known as the request handler for "/"
+app.use("/",(req,res)=>{
+    res.send("hello from the dashboard")
+})
+
+//the below function is known as the request handler for "/test"
+app.use("/test",(req,res)=>{
+    console.log("test")
+    res.send("test from the server")
+})
+
+//the below function is known as the request handler for "/hello"
+app.use("/hello",(req,res)=>{
+    res.send("hello hello")
+})
+
+app.listen(7777, () => {
+  console.log("Server is running on port 7777");
+});
+
